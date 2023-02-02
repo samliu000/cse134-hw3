@@ -11,10 +11,20 @@
 	<title>Samuel's Website</title>
 	<link href="images/favicon.ico" rel="icon">
 	<style>
-		main {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-around;
+		@media (min-width: 551px) {
+			main {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+			}
+		}
+
+		@media (max-width: 550px) {
+			main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 
 		h2 {
@@ -50,7 +60,11 @@
 			position: fixed;
 			bottom: 0;
 			width: 100%;
-			text-align: center;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			background-color: lightgray;
 		}
 	</style>
 	<script></script>
@@ -92,12 +106,12 @@
 	</main>
 
 	<footer>
-		<hr>
-		<p>This page was made with &hearts; by Samuel Liu
+		<p>This page was made with &hearts; by Samuel Liu</p>
+		<div>
 			<a href="mailto:samuel.liu1004+website@gmail.com">Email</a>
 			<a href="https://www.linkedin.com/in/samuel-liu-1004/" target="_blank">LinkedIn</a>
 			<a href="https://github.com/samliu000" target="_blank">GitHub</a>
-		</p>
+		</div>
 	</footer>
 </body>
 
