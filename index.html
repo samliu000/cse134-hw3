@@ -17,13 +17,12 @@
 		}
 
 		/* Bigger than Tablet */
-		@media (min-width: 768px) {
+		@media (min-width: 769px) {
 			main {
 				display: flex;
 				flex-flow: row wrap;
 				justify-content: space-around;
 				align-items: center;
-				margin-top: 5%;
 			}
 
 			#samuel-headshot {
@@ -42,7 +41,7 @@
 		}
 
 		/* Smaller than Tablet */
-		@media (max-width: 767px) {
+		@media (max-width: 768px) {
 			main {
 				display: flex;
 				flex-direction: column;
@@ -57,6 +56,18 @@
 			section>a>img {
 				width: 20vw;
 			}
+
+			footer {
+				margin-top: 10%;
+			}
+		}
+		
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 100vh;
+			margin: 0;
 		}
 
 		h2 {
@@ -67,13 +78,14 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			aspect-ratio: 1/1;
 			background-color: #BDE3FF;
 			border-radius: 2%;
-			padding: 10px;
 		}
 
 		section>a {
+			aspect-ratio: 1/1;
+			width: 100%;
+			padding: 10px;
 			display: flex;
 			flex-flow: column wrap;
 			justify-content: center;
@@ -91,7 +103,8 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			margin-top: 5%;
+			margin-top: 2%;
+			padding: 2vw;
 		}
 
 		h1 {
@@ -108,9 +121,6 @@
 		}
 
 		footer {
-			position: fixed;
-			bottom: 0;
-			left: 0;
 			width: 100%;
 			display: flex;
 			flex-flow: row wrap;
