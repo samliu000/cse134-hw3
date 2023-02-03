@@ -38,6 +38,15 @@
 				width: 10vw;
 				height: 10vw;
 			}
+
+			footer {
+				margin-top: 5%;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 10px;
+			}
 		}
 
 		/* Smaller than Tablet */
@@ -49,7 +58,7 @@
 			}
 
 			section {
-				width: 50%;
+				width: 60%;
 				margin-top: 10%;
 			}
 
@@ -59,9 +68,14 @@
 
 			footer {
 				margin-top: 10%;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: center;
+				align-items: center;
+				padding: 0 10px 2vh 10px;
 			}
 		}
-		
+
 		body {
 			display: flex;
 			flex-direction: column;
@@ -82,6 +96,10 @@
 			border-radius: 2%;
 		}
 
+		a {
+			color: black;
+		}
+
 		section>a {
 			aspect-ratio: 1/1;
 			width: 100%;
@@ -91,7 +109,6 @@
 			justify-content: center;
 			align-items: center;
 			text-decoration: none;
-			color: black;
 		}
 
 		section>a>h2 {
@@ -121,11 +138,6 @@
 		}
 
 		footer {
-			width: 100%;
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			align-items: center;
 			background-color: #E6E6E6;
 		}
 	</style>
@@ -133,7 +145,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="typewriter">
 		<img id="samuel-headshot" src="images/headshot.jpg" alt="Samuel Liu headshot" width="150" height="150">
 		<h1>Hi I'm Samuel,<br><span>a computer science major at UCSD</span></h1>
 	</header>
