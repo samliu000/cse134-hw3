@@ -10,7 +10,55 @@
 	<title>Experiences</title>
 	<link href="../images/favicon.ico" rel="icon">
 	<style>
+		* {
+			font-family: Inter, Arial, Helvetica, sans-serif;
+		}
+
+		/* Bigger than Tablet */
+		@media (min-width: 769px) {
+			section {
+				width: 40%;
+			}
+
+			section img {
+				width: 90px;
+				height: 90px;
+			}
+
+			footer {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 10px;
+			}
+		}
+
+		/* Smaller than Tablet */
+		@media (max-width: 768px) {
+			section {
+				width: 70%;
+			}
+
+			section img {
+				width: 80px;
+				height: 80px;
+			}
+
+			footer {
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: center;
+				align-items: center;
+				padding: 0 10px 2vh 10px;
+			}
+		}
+
 		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 100vh;
 			margin: 0;
 		}
 
@@ -38,17 +86,56 @@
 			font-size: 2em;
 			margin: 0;
 			margin-left: 15px;
+			font-weight: normal;
+		}
+
+		h2 {
+			font-weight: normal;
+			font-size: 2em;
+		}
+
+		h2>span {
+			display: inline-flex;
+			color: rgb(95, 95, 95);
+			font-size: 0.65em;
 		}
 
 		section {
 			display: flex;
 			flex-flow: column wrap;
+			margin-top: 25px;
+			padding: 15px;
+			border-radius: 10px;
+			background-color: #BDE3FF;
 		}
 
-		section>div {
+		section div {
 			display: flex;
-			flex-flow: row wrap;
+			flex-flow: row nowrap;
 			align-items: center;
+		}
+
+		section h2 {
+			margin-left: 15px;
+		}
+
+		section p {
+			font-size: 1.5em;
+		}
+
+		section li:nth-child(n+2) {
+			margin-top: 0.8vh;
+		}
+
+		main {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		footer {
+			margin-top: 25px;
+			background-color: #E6E6E6;
 		}
 	</style>
 </head>
@@ -67,7 +154,7 @@
 		<section>
 			<div>
 				<img src="../images/google_icon.png" alt="google icon" width="100" height="100">
-				<h2>Google <br><span>Software Engineer Intern | Fall 2022</span></h2>
+				<h2>Google<br><span>Software Engineer Intern | Fall 2022</span></h2>
 			</div>
 			<ul>
 				<li>Contribute to unit testing framework Robolectric as part of the Android Test Framework and
@@ -78,9 +165,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/slack_icon.png" alt="slack icon" width="100" height="100">
-			<h2>Slack</h2>
-			<h3>Software Engineer Intern | Summer 2022</h3>
+			<div>
+				<img src="../images/slack_icon.png" alt="slack icon" width="100" height="100">
+				<h2>Slack<br><span>Software Engineer Intern | Summer 2022</span></h2>
+			</div>
 			<ul>
 				<li>Work within the Mobile Adoption Android team to increase number of workspace invites and boost
 					Slack adoption </li>
@@ -91,9 +179,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/intuit_icon.jpeg" alt="intuit icon" width="100" height="100">
-			<h2>Intuit</h2>
-			<h3>Software Engineer Co-op | Winter + Spring 2022</h3>
+			<div>
+				<img src="../images/intuit_icon.jpeg" alt="intuit icon" width="100" height="100">
+				<h2>Intuit<br><span>Software Engineer Co-op | Winter + Spring 2022</span></h2>
+			</div>
 			<ul>
 				<li>Work within the Android AppFabric team to provide reusable components and services to all Intuit
 					mobile apps</li>
@@ -102,9 +191,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/dropbox_icon.jpeg" alt="dropbox icon" width="100" height="100">
-			<h2>Dropbox</h2>
-			<h3>Software Engineer Intern (LAUNCH) | Summer 2021</h3>
+			<div>
+				<img src="../images/dropbox_icon.jpeg" alt="dropbox icon" width="100" height="100">
+				<h2>Dropbox<br><span>Software Engineer Intern (LAUNCH) | Summer 2021</span></h2>
+			</div>
 			<ul>
 				<li>Rewrote Dropbox App’s Starring data layer using Android 11, Kotlin 1.4.3, RxJava2, JUnit 4, and
 					Espresso</li>
@@ -115,9 +205,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/mathworks_icon.png" alt="mathworks icon" width="100" height="100">
-			<h2>Mathworks</h2>
-			<h3>Software Engineer Intern | Fall 2021</h3>
+			<div>
+				<img src="../images/mathworks_icon.png" alt="mathworks icon" width="100" height="100">
+				<h2>Mathworks<br><span>Software Engineer Intern | Fall 2021</span></h2>
+			</div>
 			<ul>
 				<li>Implemented a website that bundles MathWorks Web Widgets using Express.js, Node.js, Jest, and
 					Webpack</li>
@@ -127,9 +218,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/ucsd_icon.jpeg" alt="uc san diego icon" width="100" height="100">
-			<h2>UC San Diego</h2>
-			<h3>Computer Science Tutor | Winter + Spring 2021</h3>
+			<div>
+				<img src="../images/ucsd_icon.jpeg" alt="uc san diego icon" width="100" height="100">
+				<h2>UC San Diego<br><span>Computer Science Tutor | Winter + Spring 2021</span></h2>
+			</div>
 			<ul>
 				<li>Host 6 hours of office hours weekly to help guide students for their weekly programming
 					assignment</li>
@@ -140,9 +232,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
-			<h2>CodePath</h2>
-			<h3>Technical Interview Mentor | Summer 2022</h3>
+			<div>
+				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
+				<h2>CodePath<br><span>Technical Interview Mentor | Summer 2022</span></h2>
+			</div>
 			<ul>
 				<li>Mentored 6 CodePath students on techniques for software engineer interviews</li>
 				<li>Lead weekly meetings to go over LeetCode style interview problems and solutions</li>
@@ -150,9 +243,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
-			<h2>CodePath</h2>
-			<h3>Android Teaching Assistant | Winter 2021</h3>
+			<div>
+				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
+				<h2>CodePath<br><span>Android Teaching Assistant | Winter 2021</span></h2>
+			</div>
 			<ul>
 				<li>Resolve and troubleshoot all technical Android/Android Studios/emulator problems for over 470
 					participants in Codepath’s Advanced Android Course
@@ -160,9 +254,10 @@
 			</ul>
 		</section>
 		<section>
-			<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
-			<h2>CodePath</h2>
-			<h3>Android Tech Fellow | Winter + Spring 2022</h3>
+			<div>
+				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
+				<h2>CodePath<br><span>Android Tech Fellow | Winter + Spring 2022</span></h2>
+			</div>
 			<ul>
 				<li>Lecture once a week about Android Programming to a classroom of 20 UCSD Students. I help
 					students with questions, manage class logistics, and prepare lecture slides.</li>
@@ -171,12 +266,12 @@
 	</main>
 
 	<footer>
-		<hr>
-		<p>This page was made with &hearts; by Samuel Liu
+		<p>This page was made with &hearts; by Samuel Liu</p>
+		<div>
 			<a href="mailto:samuel.liu1004+website@gmail.com">Email</a>
 			<a href="https://www.linkedin.com/in/samuel-liu-1004/" target="_blank">LinkedIn</a>
 			<a href="https://github.com/samliu000" target="_blank">GitHub</a>
-		</p>
+		</div>
 	</footer>
 </body>
 

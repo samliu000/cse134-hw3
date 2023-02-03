@@ -79,7 +79,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #BDE3FF;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 a {
