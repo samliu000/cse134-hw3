@@ -9,135 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Experiences</title>
 	<link href="../images/favicon.ico" rel="icon">
-	<style>
-		* {
-			font-family: Inter, Arial, Helvetica, sans-serif;
-		}
-
-		/* Bigger than Tablet */
-		@media (min-width: 769px) {
-			section {
-				width: 40%;
-			}
-
-			section img {
-				width: 90px;
-				height: 90px;
-			}
-
-			footer {
-				display: flex;
-				flex-flow: row wrap;
-				justify-content: space-between;
-				align-items: center;
-				padding: 0 10px;
-			}
-		}
-
-		/* Smaller than Tablet */
-		@media (max-width: 768px) {
-			section {
-				width: 70%;
-			}
-
-			section img {
-				width: 80px;
-				height: 80px;
-			}
-
-			footer {
-				display: flex;
-				flex-flow: column wrap;
-				justify-content: center;
-				align-items: center;
-				padding: 0 10px 2vh 10px;
-			}
-		}
-
-		body {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			min-height: 100vh;
-			margin: 0;
-		}
-
-		header {
-			background-color: #E6E6E6;
-		}
-
-		nav {
-			display: flex;
-			align-items: center;
-		}
-
-		nav a {
-			aspect-ratio: 1/1;
-			padding: 0.5vw;
-			background-color: #BDE3FF;
-		}
-
-		nav img {
-			width: 50px;
-			height: 50px;
-		}
-
-		h1 {
-			font-size: 2em;
-			margin: 0;
-			margin-left: 15px;
-			font-weight: normal;
-		}
-
-		h2 {
-			font-weight: normal;
-			font-size: 2em;
-		}
-
-		h2>span {
-			display: inline-flex;
-			color: rgb(95, 95, 95);
-			font-size: 0.65em;
-		}
-
-		section {
-			display: flex;
-			flex-flow: column wrap;
-			margin-top: 25px;
-			padding: 15px;
-			border-radius: 10px;
-			background-color: #BDE3FF;
-		}
-
-		section div {
-			display: flex;
-			flex-flow: row nowrap;
-			align-items: center;
-		}
-
-		section h2 {
-			margin-left: 15px;
-		}
-
-		section p {
-			font-size: 1.5em;
-		}
-
-		section li:nth-child(n+2) {
-			margin-top: 0.8vh;
-		}
-
-		main {
-			display: flex;
-			flex-flow: column wrap;
-			align-items: center;
-		}
-
-		footer {
-			margin-top: 25px;
-			background-color: #E6E6E6;
-		}
-	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+	<link rel="stylesheet" href="../css/subpage.css">
 </head>
 
 <body>
@@ -151,7 +24,7 @@
 	</header>
 
 	<main>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/google_icon.png" alt="google icon" width="100" height="100">
 				<h2>Google<br><span>Software Engineer Intern | Fall 2022</span></h2>
@@ -164,7 +37,7 @@
 					per day)</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/slack_icon.png" alt="slack icon" width="100" height="100">
 				<h2>Slack<br><span>Software Engineer Intern | Summer 2022</span></h2>
@@ -178,7 +51,7 @@
 				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/intuit_icon.jpeg" alt="intuit icon" width="100" height="100">
 				<h2>Intuit<br><span>Software Engineer Co-op | Winter + Spring 2022</span></h2>
@@ -190,7 +63,7 @@
 				<li>Created Loading Indicator, Checkbox, and Banner UI Components using Jetpack Compose 1.1.1</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/dropbox_icon.jpeg" alt="dropbox icon" width="100" height="100">
 				<h2>Dropbox<br><span>Software Engineer Intern (LAUNCH) | Summer 2021</span></h2>
@@ -204,7 +77,7 @@
 					spot bonus</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/mathworks_icon.png" alt="mathworks icon" width="100" height="100">
 				<h2>Mathworks<br><span>Software Engineer Intern | Fall 2021</span></h2>
@@ -217,7 +90,7 @@
 					unnecessary computation</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/ucsd_icon.jpeg" alt="uc san diego icon" width="100" height="100">
 				<h2>UC San Diego<br><span>Computer Science Tutor | Winter + Spring 2021</span></h2>
@@ -231,7 +104,7 @@
 					(Git)</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
 				<h2>CodePath<br><span>Technical Interview Mentor | Summer 2022</span></h2>
@@ -242,7 +115,7 @@
 				<li>Provided general interviewing advice for both behavioral and technical interviews</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
 				<h2>CodePath<br><span>Android Teaching Assistant | Winter 2021</span></h2>
@@ -253,7 +126,7 @@
 				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="experience">
 			<div>
 				<img src="../images/codepath_icon.jpeg" alt="codepath icon" width="100" height="100">
 				<h2>CodePath<br><span>Android Tech Fellow | Winter + Spring 2022</span></h2>

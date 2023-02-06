@@ -1,0 +1,160 @@
+* {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+/* Bigger than Tablet */
+@media (min-width: 769px) {
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  /* experience blocks */
+  .experience {
+    width: 65ch;
+  }
+
+  .experience img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  /* project blocks */
+  .project {
+    width: 65ch;
+  }
+}
+
+/* Smaller than Tablet */
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 2vh 10px;
+  }
+  /* experience blocks */
+  .experience {
+    width: 70%;
+  }
+
+  .experience img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* project blocks */
+  .project {
+    width: 70%;
+  }
+}
+
+/* header, main, footer */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* header */
+header {
+  background-color: #e6e6e6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  aspect-ratio: 1/1;
+  padding: 0.5vw;
+  background-color: #bde3ff;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+}
+
+/* general text styling */
+h1 {
+  font-size: 1.75rem;
+  margin: 0;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 > span {
+  display: inline-flex;
+  color: rgb(95, 95, 95);
+  font-size: 0.65em;
+}
+
+/* experience blocks */
+.experience {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #bde3ff;
+}
+
+.experience div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.experience h2 {
+  margin-left: 15px;
+}
+
+.experience p {
+  font-size: 1.5em;
+}
+
+.experience li:nth-child(n + 2) {
+  margin-top: 0.8vh;
+}
+
+/* project blocks */
+.project {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #bde3ff;
+}
+
+.picture-title {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+footer {
+  margin-top: 25px;
+  background-color: #e6e6e6;
+}
