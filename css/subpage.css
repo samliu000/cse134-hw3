@@ -149,8 +149,17 @@ h2 > span {
 }
 
 /* coursework */
+.coursework-list {
+  background-color: #bde3ff;
+  margin-top: 25px;
+  padding: 25px 50px;
+  border-radius: 10px;
+  background-color: #bde3ff;
+}
+
 .coursework-list li {
   font-size: 1.5em;
+  padding-left: 1%;
 }
 
 .coursework-list li:nth-child(n + 2) {
