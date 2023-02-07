@@ -21,7 +21,7 @@
     width: 90px;
     height: 90px;
   }
-  
+
   /* project blocks */
   .project {
     width: 65ch;
@@ -146,6 +146,15 @@ h2 > span {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+
+/* coursework */
+.coursework-list li {
+  font-size: 1.5em;
+}
+
+.coursework-list li:nth-child(n + 2) {
+  margin-top: 0.8vh;
 }
 
 main {
