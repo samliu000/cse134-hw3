@@ -142,7 +142,7 @@ footer {
 @media (min-width: 500px) {
     .typewriter {
         overflow: hidden;
-        border-right: .15em solid #bde3ff;
+        border-right: .15em solid #49adf5;
         width: 0;
         white-space: nowrap;
         animation:
@@ -174,7 +174,7 @@ footer {
         }
 
         to {
-            border-color: #bde3ff;
+            border-color: #49adf5;
         }
     }
 }
