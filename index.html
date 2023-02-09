@@ -12,13 +12,55 @@
 	<link href="images/favicon.ico" rel="icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 	<link rel="stylesheet" href="css/main.css">
-	<script></script>
+	<style>
+		.typewriter {
+			overflow: hidden;
+			border-right: .15em solid #bde3ff;
+			width: 0;
+			white-space: nowrap;
+			animation:
+				typing 1s steps(32, end) forwards,
+				blink 1.25s infinite;
+		}
+
+		.typewriter-container {
+			display: inline-block;
+		}
+
+		h1>span {
+			display:block;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0
+			}
+
+			to {
+				width: 100%
+			}
+		}
+
+		@keyframes blink {
+			from {
+				border-color: transparent
+			}
+
+			to {
+				border-color: #bde3ff;
+			}
+		}
+	</style>
 </head>
 
 <body>
-	<header class="typewriter">
+	<header>
 		<img id="samuel-headshot" src="images/headshot.jpg" alt="Samuel Liu headshot" width="150" height="150">
-		<h1>Hi I'm Samuel,<br><span>a computer science major at UCSD</span></h1>
+		<div class="typewriter-container">
+			<h1>Hi I'm Samuel,<br>
+				<span class="typewriter">a computer science major at UCSD</span>
+			</h1>
+		</div>
 	</header>
 
 	<main>
