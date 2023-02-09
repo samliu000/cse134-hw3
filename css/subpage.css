@@ -65,6 +65,9 @@ body {
 /* header */
 header {
   background-color: #e6e6e6;
+  position: sticky;
+  top: 0;
+  opacity: 0.8;
 }
 
 nav {
