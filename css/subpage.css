@@ -2,8 +2,8 @@
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-/* Bigger than Tablet */
-@media (min-width: 769px) {
+/* Tablet & Laptop */
+@media (min-width: 641px) {
   footer {
     display: flex;
     flex-flow: row wrap;
@@ -26,10 +26,38 @@
   .project {
     width: 65ch;
   }
+
+  /* coursework block */
+  .coursework-list {
+    margin-top: 25px;
+    padding: 25px 50px;
+  }
+
+  .coursework-list li {
+    font-size: 1.4em;
+  }
 }
 
-/* Smaller than Tablet */
-@media (max-width: 768px) {
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1007px) {
+  /* experience blocks */
+  .experience {
+    width: 55ch;
+  }
+
+  /* project blocks */
+  .project {
+    width: 55ch;
+  }
+
+  /* coursework block */
+  .coursework-list {
+    width: 55ch;
+  }
+}
+
+/* Phone Tablet */
+@media (max-width: 640px) {
   footer {
     display: flex;
     flex-flow: column wrap;
@@ -50,6 +78,16 @@
   /* project blocks */
   .project {
     width: 80%;
+  }
+
+  /* coursework blocks */
+  .coursework-list {
+    width: 80%;
+    padding: 25px 10px 25px 30px;
+  }
+
+  .coursework-list li {
+    font-size: 1.1em;
   }
 }
 
@@ -153,16 +191,13 @@ h2 > span {
 
 /* coursework */
 .coursework-list {
-  background-color: #bde3ff;
-  margin-top: 25px;
-  padding: 25px 50px;
   border-radius: 10px;
   background-color: #bde3ff;
 }
 
 .coursework-list li {
-  font-size: 1.5em;
   padding-left: 1%;
+  font-weight: 200;
 }
 
 .coursework-list li:nth-child(n + 2) {
