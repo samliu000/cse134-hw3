@@ -3,6 +3,7 @@
   --cursor-blue: #49adf5;
   --light-gray: #e6e6e6;
   --pulse-gray: #cad7e0;
+  --pulse-duration: 0.5s;
 }
 
 * {
@@ -123,6 +124,13 @@
   }
 }
 
+/* Firefox */
+@-moz-document url-prefix() {
+  :root {
+    --pulse-duration: 0.75s;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -239,7 +247,7 @@ section > a:focus {
   font-size: var(--animation-font-size);
   border-radius: 0px;
   background-color: var(--main-blue);
-  animation: pulse 0.5s, fontInc 0.5s ease-in;
+  animation: pulse var(--pulse-duration), fontInc var(--pulse-duration) ease-in;
   animation-fill-mode: forwards;
 }
 
