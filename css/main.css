@@ -9,8 +9,12 @@
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-/* Bigger than Tablet */
-@media (min-width: 769px) {
+/* Tablet & Laptop */
+@media (min-width: 641px) {
+  :root {
+    --animation-font-size: 1.4em;
+  }
+
   header {
     display: flex;
     flex-direction: row;
@@ -53,8 +57,19 @@
   }
 }
 
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1007px) {
+  :root {
+    --animation-font-size: 1.1em;
+  }
+}
+
 /* Smaller than Tablet */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  :root {
+    --animation-font-size: 1.5em;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -201,7 +216,7 @@ footer a {
 /* pulse animation */
 section > a:hover,
 section > a:focus {
-  font-size: 1.5rem;
+  font-size: var(--animation-font-size);
   border-radius: 0px;
   background-color: var(--main-blue);
   animation: pulse 0.7s, fontInc 0.7s ease-in;
@@ -210,7 +225,7 @@ section > a:focus {
 
 @keyframes fontInc {
   100% {
-    font-size: 1.5em;
+    font-size: var(--animation-font-size);
   }
 }
 
