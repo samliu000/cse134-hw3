@@ -32,8 +32,8 @@
   }
 
   #samuel-headshot {
-    width: 15%;
-    height: 15%;
+    width: 15vw;
+    height: 15vw;
   }
 
   section {
@@ -65,6 +65,11 @@
     --animation-font-size: 1.3em;
   }
 
+  #samuel-headshot {
+    width: 150px;
+    height: 150px;
+  }
+
   main {
     justify-content: center;
   }
@@ -86,6 +91,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  #samuel-headshot {
+    width: 150px;
+    height: 150px;
   }
 
   main {
