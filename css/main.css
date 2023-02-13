@@ -1,3 +1,10 @@
+:root {
+  --main-blue: #bde3ff;
+  --cursor-blue: #49adf5;
+  --light-gray: #e6e6e6;
+  --pulse-gray: #cad7e0;
+}
+
 * {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
@@ -102,7 +109,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
   border-radius: 10px;
 }
 
@@ -137,14 +144,26 @@ h1 > span {
 }
 
 footer {
-  background-color: #e6e6e6;
+  background-color: var(--light-gray);
+}
+
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 15px;
+}
+
+footer a {
+  width: 30px;
+  height: 30px;
 }
 
 /* typewriter animation */
 @media (min-width: 500px) {
   .typewriter {
     overflow: hidden;
-    border-right: 0.15em solid #49adf5;
+    border-right: 0.15em solid var(--cursor-blue);
     width: 0;
     white-space: nowrap;
     animation: typing 1.5s steps(30, end) forwards, blink 1s infinite;
@@ -174,7 +193,7 @@ footer {
     }
 
     to {
-      border-color: #49adf5;
+      border-color: var(--cursor-blue);
     }
   }
 }
@@ -184,7 +203,7 @@ section > a:hover,
 section > a:focus {
   font-size: 1.5rem;
   border-radius: 0px;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
   animation: pulse 0.7s, fontInc 0.7s ease-in;
   animation-fill-mode: forwards;
 }
@@ -197,7 +216,7 @@ section > a:focus {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 #cad7e0;
+    box-shadow: 0 0 0 0 var(--pulse-gray);
   }
   100% {
     box-shadow: 0 0 5px 2em transparent;

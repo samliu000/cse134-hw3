@@ -1,3 +1,8 @@
+:root {
+  --main-blue: #bde3ff;
+  --light-gray: #e6e6e6;
+}
+
 * {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
@@ -102,7 +107,7 @@ body {
 
 /* header */
 header {
-  background-color: #e6e6e6;
+  background-color: var(--light-gray);
   position: sticky;
   top: 0;
   opacity: 0.9;
@@ -116,7 +121,7 @@ nav {
 nav a {
   aspect-ratio: 1/1;
   padding: 0.5vw;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
 }
 
 nav img {
@@ -152,7 +157,7 @@ h2 > span {
   margin-top: 25px;
   padding: 15px;
   border-radius: 10px;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
 }
 
 .experience div {
@@ -180,7 +185,7 @@ h2 > span {
   margin-top: 25px;
   padding: 25px;
   border-radius: 10px;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
 }
 
 .picture-title {
@@ -189,10 +194,18 @@ h2 > span {
   align-items: center;
 }
 
+.out-links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
 /* coursework */
 .coursework-list {
   border-radius: 10px;
-  background-color: #bde3ff;
+  background-color: var(--main-blue);
 }
 
 .coursework-list li {
@@ -212,5 +225,17 @@ main {
 
 footer {
   margin-top: 25px;
-  background-color: #e6e6e6;
+  background-color: var(--light-gray);
+}
+
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 15px;
+}
+
+footer a {
+  width: 30px;
+  height: 30px;
 }
