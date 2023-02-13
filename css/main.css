@@ -27,6 +27,8 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    row-gap: 35px;
+    column-gap: 50px;
   }
 
   #samuel-headshot {
@@ -60,14 +62,22 @@
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1007px) {
   :root {
-    --animation-font-size: 1.1em;
+    --animation-font-size: 1.3em;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  section {
+    width: 250px;
   }
 }
 
 /* Smaller than Tablet */
 @media (max-width: 640px) {
   :root {
-    --animation-font-size: 1.5em;
+    --animation-font-size: 1.3em;
   }
 
   header {
@@ -85,7 +95,7 @@
   }
 
   section {
-    width: 60%;
+    width: 250px;
     margin-top: 10%;
   }
 
