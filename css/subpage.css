@@ -1,5 +1,6 @@
 :root {
   --main-blue: #bde3ff;
+  --dark-blue: rgb(52, 177, 240);
   --light-gray: #e6e6e6;
 }
 
@@ -35,11 +36,16 @@
   /* coursework block */
   .coursework-list {
     margin-top: 25px;
-    padding: 25px 50px;
   }
 
   .coursework-list li {
-    font-size: 1.4em;
+    font-size: 1.2rem;
+  }
+
+  .coursework-list p {
+    padding: 0;
+    margin: 0;
+    width: 70%;
   }
 }
 
@@ -88,11 +94,15 @@
   /* coursework blocks */
   .coursework-list {
     width: 80%;
-    padding: 25px 10px 25px 30px;
+    text-align: center;
   }
 
-  .coursework-list li {
-    font-size: 1.1em;
+  .coursework-list span {
+    display: none;
+  }
+
+  .coursework-list p {
+    width: 100%;
   }
 }
 
@@ -211,16 +221,37 @@ h2 > span {
 /* coursework */
 .coursework-list {
   border-radius: 10px;
-  background-color: var(--main-blue);
+  padding: 0;
+  list-style: none;
   opacity: 0;
   animation: fade-in 2s forwards;
 }
 
 .coursework-list li {
-  padding-left: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+  background-color: var(--main-blue);
+  padding: 10px;
+  border-radius: 10px;
   font-weight: 200;
   opacity: 0;
   animation: fade-in 1s forwards, fly-in-right 1s forwards;
+}
+
+.coursework-list span {
+  background-color: var(--dark-blue);
+  padding: 2px;
+  border-radius: 10px;
+  width: 110px;
+  color: white;
+  text-align: center;
+}
+
+.coursework-list p {
+  padding: 0;
+  margin: 0;
 }
 
 .coursework-list li:nth-child(n + 2) {
