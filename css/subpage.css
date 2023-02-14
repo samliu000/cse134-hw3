@@ -200,18 +200,13 @@ h2 > span {
 .project {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   margin-top: 25px;
   padding: 25px;
   border-radius: 10px;
   background-color: var(--main-blue);
   opacity: 0;
   animation: fade-in 1s forwards, fly-in-right 1s forwards;
-}
-
-.picture-title-links {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 
 .title-links {

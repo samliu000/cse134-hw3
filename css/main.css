@@ -214,7 +214,8 @@ footer a {
     border-right: 0.15em solid var(--cursor-blue);
     width: 0;
     white-space: nowrap;
-    animation: typing var(--typing-duration) steps(30, end) forwards, blink 1s infinite;
+    animation: typing var(--typing-duration) steps(30, end) forwards,
+      blink 1s infinite;
   }
 
   .typewriter-container {
