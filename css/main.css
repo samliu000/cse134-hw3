@@ -162,6 +162,7 @@ section {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 section > a {
@@ -172,7 +173,6 @@ section > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
 }
 
 section > a > h2 {
