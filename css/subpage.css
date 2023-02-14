@@ -10,6 +10,10 @@
 
 /* Tablet & Laptop */
 @media (min-width: 641px) {
+  h2 {
+    font-size: 2em;
+  }
+
   footer {
     display: flex;
     flex-flow: row wrap;
@@ -69,6 +73,10 @@
 
 /* Phone Tablet */
 @media (max-width: 640px) {
+  h2 {
+    font-size: 2em;
+  }
+
   footer {
     display: flex;
     flex-flow: column wrap;
@@ -103,6 +111,25 @@
 
   .coursework-list p {
     width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 350px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .experience span {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -155,7 +182,6 @@ h1 {
 
 h2 {
   font-weight: normal;
-  font-size: 2em;
   margin-top: 20px;
   margin-bottom: 20px;
 }
