@@ -4,6 +4,7 @@
   --light-gray: #e6e6e6;
   --pulse-gray: #cad7e0;
   --pulse-duration: 0.5s;
+  --profile-pic-shadow-gray: rgb(167, 166, 166);
 }
 
 * {
@@ -35,6 +36,7 @@
   #samuel-headshot {
     width: 15vw;
     height: 15vw;
+    box-shadow: 4px 4px 5px var(--profile-pic-shadow-gray);
   }
 
   section {
@@ -154,6 +156,8 @@ section {
   align-items: center;
   background-color: var(--main-blue);
   border-radius: 10px;
+  box-shadow: 5px 5px 5px lightgray;
+  transition: box-shadow 0.35s;
 }
 
 a {
@@ -242,10 +246,15 @@ footer a {
 }
 
 /* pulse animation */
+section:hover,
+section:focus {
+  box-shadow: 0 0 0 var(--profile-pic-shadow-gray);
+}
+
 section > a:hover,
 section > a:focus {
   font-size: var(--animation-font-size);
-  border-radius: 0px;
+  border-radius: 10px;
   background-color: var(--main-blue);
   animation: pulse var(--pulse-duration), fontInc var(--pulse-duration) ease-in;
   animation-fill-mode: forwards;
