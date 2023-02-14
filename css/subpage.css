@@ -159,7 +159,7 @@ h2 > span {
   border-radius: 10px;
   background-color: var(--main-blue);
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards, fly-in-right 1s forwards;
 }
 
 .experience div {
@@ -188,6 +188,8 @@ h2 > span {
   padding: 25px;
   border-radius: 10px;
   background-color: var(--main-blue);
+  opacity: 0;
+  animation: fade-in 1s forwards, fly-in-right 1s forwards;
 }
 
 .picture-title {
@@ -208,6 +210,8 @@ h2 > span {
 .coursework-list {
   border-radius: 10px;
   background-color: var(--main-blue);
+  opacity: 0;
+  animation: fade-in 1s forwards, fly-in-right 1s forwards;
 }
 
 .coursework-list li {
@@ -244,11 +248,14 @@ footer a {
 
 /* Fade in animation */
 @keyframes fade-in {
-  0% {
-    transform: translateX(100%);
-  }
   100% {
     opacity: 100;
+  }
+}
+
+@keyframes fly-in-right {
+  0% {
+    transform: translateX(100%);
   }
 }
 
@@ -265,7 +272,7 @@ footer a {
   animation-delay: 0.8s;
 }
 .experience:nth-child(6) {
-  animation-delay: 1.0s;
+  animation-delay: 1s;
 }
 .experience:nth-child(7) {
   animation-delay: 1.2s;
