@@ -36,7 +36,6 @@
   #samuel-headshot {
     width: 15vw;
     height: 15vw;
-    box-shadow: 4px 4px 5px var(--profile-pic-shadow-gray);
   }
 
   section {
@@ -188,6 +187,7 @@ h1 > span {
 
 #samuel-headshot {
   border-radius: 50%;
+  box-shadow: 4px 4px 5px var(--profile-pic-shadow-gray);
 }
 
 footer {
